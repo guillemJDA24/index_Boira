@@ -93,7 +93,7 @@ Trobeu la taula a [https://en.wikipedia.org/wiki/Gunning_fog_index] (https://en.
 
 Quan acabeu feu commit al repositori amb missatge "Exercici4 acabat"
 
-## Exerecici 5 Configurar el programa des d'un arxiu (2.5 punts)
+## Exerecici 5 Configurar el programa des d'un arxiu 
 
 Heu de permetre que els paràmetres (llindar lletres pel que es considera paraula llarga o els caràcters que delimiten les frases) siguin llegits d'un fitxer de configuració.
 
