@@ -22,12 +22,27 @@ def percetantgeParaulesComplexes(text):
 #Exericic 5 llegir configuració
 
 #Exercici 1
-nomFitxer = input("Entra el nom de l'arxiu que vols analitzar")
+
+r=False
+while r==False:
+
+  nomFitxer = input("Entra el nom de l'arxiu que vols analitzar")
+  
+
+  if (os.path.isfile('noticies/'+nomFitxer')):
+      r=True
+      print("És fitxer")
+      nom=open('noticies/'+nomFitxer'.txt','r')
+      text=(nom.read())
+
+  else:
+      print("No és fitxer")
+      r=False
 print("Gràcies!")
 
 #TODO heu de completar el codi perquè la variable text tingui el contingut del fitxer
 
-text = 
+ 
 
 #Per provar exercici 2 i 3 podeu posar-vos print aquíí per comprovar si es compta béé paraules, si compta frases, si es fa la mitja i si es detecten les complexes.
 
