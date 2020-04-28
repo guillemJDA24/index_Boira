@@ -1,21 +1,19 @@
+import os
 #Exercici2
 def comptarParaules(text):
+  conp=0
+  for p in text:
+    conp=conp+1
+  return conp
   #TODO Heu de retornar el nombre de paraules que té un text
   #Com podeu detectar una paraula, que el separa les paraules?
 
 def comptarFrases(text):
-  #TODO Heu de retornar el nombre de frases. 
-  #Com es separen les frases?
+  conf=0
+  for f in text.readline('.'):
+    conf+=conf+1
+  return conf
 
-def mitjanaParaulesPerFrase(text):
-  #TODO Heu de retornar la mitjana de paraules per frases?
-
-#Exercici 3
-def numeroParulesComplexes(text):
-  #TODO Heu de retornar el nombre de paraules complexes que té el text
-  #Són aquelles que tenen méés de cinc lletres
-
-def percetantgeParaulesComplexes(text):
 
 
 #TODO Fer-ho al final de tot el 5.
@@ -26,20 +24,24 @@ def percetantgeParaulesComplexes(text):
 r=False
 while r==False:
 
-  nomFitxer = input("Entra el nom de l'arxiu que vols analitzar")
+  nomFitxer = input("Entra el nom de l'arxiu que vols analitzar ")
   
 
-  if (os.path.isfile('noticies/'+nomFitxer')):
+  if (os.path.isfile('noticies/'+nomFitxer)):
       r=True
       print("És fitxer")
-      nom=open('noticies/'+nomFitxer'.txt','r')
+      nom=open('noticies/'+ nomFitxer ,'r')
       text=(nom.read())
 
   else:
       print("No és fitxer")
       r=False
-  text= open('noticies/'+nomFitxer','r')
-  contingut=text.read()
+ 
+print(text)
+
+print(comptarParaules(text))
+
+
 print("Gràcies!")
 
 #TODO heu de completar el codi perquè la variable text tingui el contingut del fitxer
@@ -50,7 +52,7 @@ print("Gràcies!")
 
 #Exercici 4
 #càlcul de la fórmula
-index = 
+index =0 
 
 #TODO  Pinteu index per pantalla 
 
