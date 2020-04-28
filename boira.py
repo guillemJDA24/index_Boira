@@ -38,6 +38,8 @@ while r==False:
   else:
       print("No és fitxer")
       r=False
+  text= open('noticies/'+nomFitxer','r')
+  contingut=text.read()
 print("Gràcies!")
 
 #TODO heu de completar el codi perquè la variable text tingui el contingut del fitxer
