@@ -1,10 +1,10 @@
 import os
 #Exercici2
 def comptarParaules(text):
-  conp=1
-  for p in text:
-    if p == ' ':
-      conp=conp+1
+  textx=text.split()
+  conp=0
+  for p in textx:
+    conp=conp+1
   return conp
   #TODO Heu de retornar el nombre de paraules que té un text
   #Com podeu detectar una paraula, que el separa les paraules?
@@ -20,16 +20,26 @@ def comptarFrases(text):
       conf=conf+1
   return conf
 def mitjanaParaulesPerFrase(text):
-  #TODO Heu de retornar la mitjana de paraules per frases?
-
+  p=int(comptarParaules(text))
+  f=int(comptarFrases(text))
+  mitjana=p/f
+  return mitjana
 #Exercici 3
-def numeroParulesComplexes(text):
+def numeroParaulesComplexes(text):
+  textx=text.split()
+  conpc=0
+  for p in textx:
+    if len(p) >= 5:
+      conpc=conpc+1
+  return conpc
   #TODO Heu de retornar el nombre de paraules complexes que té el text
   #Són aquelles que tenen méés de cinc lletres
 
 def percetantgeParaulesComplexes(text):
-
-
+  p=int(comptarParaules(text))
+  pc=int(mitjanaParaulesPerFrase(text))
+  percentatge=(100*pc)/p
+  return percentatge
 
 #TODO Fer-ho al final de tot el 5.
 #Exericic 5 llegir configuració
@@ -56,7 +66,9 @@ print(text)
 
 print(comptarParaules(text))
 print(comptarFrases(text))
-
+print(mitjanaParaulesPerFrase(text))
+print(numeroParaulesComplexes(text))
+print((percetantgeParaulesComplexes(text)),('%'))
 
 print("Gràcies!")
 
