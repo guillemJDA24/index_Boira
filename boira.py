@@ -1,18 +1,33 @@
 import os
 #Exercici2
 def comptarParaules(text):
-  conp=0
+  conp=1
   for p in text:
-    conp=conp+1
+    if p == ' ':
+      conp=conp+1
   return conp
   #TODO Heu de retornar el nombre de paraules que té un text
   #Com podeu detectar una paraula, que el separa les paraules?
 
 def comptarFrases(text):
   conf=0
-  for f in text.readline('.'):
-    conf+=conf+1
+  for f in text:
+    if f =='.':
+      conf=conf+1
+    elif f==':':
+      conf=conf+1
+    elif f==';':
+      conf=conf+1
   return conf
+def mitjanaParaulesPerFrase(text):
+  #TODO Heu de retornar la mitjana de paraules per frases?
+
+#Exercici 3
+def numeroParulesComplexes(text):
+  #TODO Heu de retornar el nombre de paraules complexes que té el text
+  #Són aquelles que tenen méés de cinc lletres
+
+def percetantgeParaulesComplexes(text):
 
 
 
@@ -40,6 +55,7 @@ while r==False:
 print(text)
 
 print(comptarParaules(text))
+print(comptarFrases(text))
 
 
 print("Gràcies!")
